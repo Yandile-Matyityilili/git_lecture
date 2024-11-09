@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Flexbox Container to Center Content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Header Styles */
+h1 {
+    background-color: #f0f8ff;
+    color: black;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+/* Card Container (Main Layout) */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 cards per row */
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+/* Card Styles */
+.card {
+    width: 100%; /* Make cards responsive */
+    max-width: 300px; /* Set max width */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles inside Cards */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Small Text for Product */
+.product {
+    font-size: 10px;
+}
+
+/* Responsive Design for Tablets (<=768px) */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+}
+
+/* Responsive Design for Mobile (<=480px) */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+}

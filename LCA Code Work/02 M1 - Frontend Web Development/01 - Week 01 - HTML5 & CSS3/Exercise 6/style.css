@@ -1,0 +1,98 @@
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius: 4px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+}
+
+.submit-button{
+    background:#2196F3;
+    color: white;
+    padding:12px 24px;
+}
+.submit-button:hover {
+    background-color: #1976D2;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.table-container {
+    overflow-x: auto; 
+}
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1; 
+}
+
+th {
+    background-color: #2196F3;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5; /
+}
+
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+section {
+    margin-bottom: 20px; 
+}
+/* Headings */
+h2, h3 {
+    margin: 0 0 10px;
+    position:0;
+    display: center;
+}
+/* paragraph */
+p {
+    line-height: 1.6; 
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; 
+    }
+}
+h1{
+    margin:0 auto;
+}
+/* Header */
+header{
+    margin:0 auto;
+}
+form{
+    margin-bottom:30px;
+}

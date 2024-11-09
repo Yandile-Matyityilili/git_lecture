@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Exercise 4</title>
+</head>
+<div class="align">
+    <!-- Main heading -->
+    <h1 align="center">Form - Exercise 4</h1>
+</div>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- Internal Styling -->
+  <style>
+
+      body{
+          font-family: "Raleway", sans-serif;
+      }
+      form{
+          border: 1px solid black;
+          padding: 20px;
+          border-radius: 5px;
+          max-width: 500px;
+          margin: 0 auto;
+      }
+      input, select{
+          display: block;
+          margin-top: 5px;
+          margin-bottom: 10px;
+      }
+      input[type="radio" i]{
+          display: inline;
+      }
+      label[name="Rate_Content"],
+      label[name="Extra_Comments"],
+      label[name="Rate_Lecturer"]{
+          display: block;
+      }
+
+      .lecturer-label{
+          display: block;
+      }
+</style>
+<body>
+
+    <form action="https://formspree.io/f/xpwzpzrd" method="post">
+
+        <!-- First Name -->
+        <label>Enter your first Name</label>
+        <input type="text" name="full_name" placeholder="Enter your first name">
+
+        <!-- Last name -->
+        <label>Enter your last name</label>
+        <input type="text" name="last_name" placeholder="Enter your last name">
+
+        <!-- Gender -->
+        <label>Gender</label>
+        <label class="lecturer-label"></label>
+            <input type="radio" name="m_rating" value="Male"><label>Male</label>
+            <input type="radio" name="m_rating" value="Female"><label>Female</label>
+        
+        <!-- Date of Birth -->
+         <label class="lecturer-label"></label>
+        <label for="birthday">Date of Birth</label>
+        <input type="date" id="date_of_birth" name="date_of_birth">
+
+        <!-- Email Address -->
+        <label>Enter your email address</label>
+        <input type="email" name="email" placeholder="Enter your email address">
+        
+        <button type="send">send</button>
+    </form>
+    <form action="http://httpbin.org/get" method="get">
+        <label>Search</label>
+        <input type="text" name="search_name" placeholder="Search">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
